@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎤 Voice Notes</h1>
+
+  <!-- Microphone Icon -->
+  <div class="mic-wrapper">
+    <div class="mic-icon" id="mic-icon">🎤</div>
+  </div>
+
+  <!-- Waveform Animation Canvas -->
+  <canvas id="waveform" height="50"></canvas>
+
+  <!-- Control Buttons -->
+  <div class="controls">
+    <button id="start-btn">Start</button>
+    <button id="stop-btn" disabled>Stop</button>
+    <button id="save-btn">Save Note</button>
+  </div>
+
+  <!-- Live Transcription Output -->
+  <div id="live-text" contenteditable="false" placeholder="Your speech will appear here..."></div>
+
+  <!-- Saved Notes Section -->
+  <h2>📝 Saved Notes</h2>
+  <ul id="notes-list"></ul>
+
+  <!-- Dark Mode Toggle -->
+  <label class="toggle-container">
+    🌞 <input type="checkbox" id="dark-mode-toggle" /> 🌙
+  </label>
+
+  <script src="script.js"></script>
+</body>
+</html>
